@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Arduino Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Minimal Web-Based Arduino Simulator</h1>
+
+  <div class="top-controls">
+    <button id="toggleView">Code View</button>
+    <button id="startSim">Start</button>
+    <button id="stopSim">Stop</button>
+  </div>
+
+  <div id="app">
+    <div id="palette">
+      <h3>Components</h3>
+      <div class="component" id="add-arduino">Arduino Uno</div>
+      <div class="component" id="add-led">LED</div>
+      <div class="component" id="add-button">Push Button</div>
+    </div>
+
+    <div id="canvas">
+      <h3>Circuit Canvas</h3>
+
+      <div id="simulationPanel">
+        <h4>Simulation</h4>
+        <button id="simButton" disabled>Push Button</button>
+        <div id="simLED">LED OFF</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="codeView">
+    <h3>Generated Arduino Code</h3>
+    <pre id="codeBlock">// Add LED and Button to generate code</pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
