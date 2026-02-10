@@ -11,7 +11,7 @@ body {
 
 #app {
   display: flex;
-  height: calc(100vh - 100px); /* header (60) + footer (40) */
+  height: calc(100vh - 100px);
 }
 
 #palette,
@@ -103,7 +103,7 @@ body {
 }
 
 .led {
-  background: #b71c1c; /* red */
+  background: #b71c1c;
   border-radius: 50%;
   box-shadow: inset 0 0 5px #000;
   transition: 
@@ -112,9 +112,9 @@ body {
     z-index: 2;
 }
 
-/* LED ON = GREEN + GLOW */
+
 .led.on {
-  background: #00e676; /* bright green */
+  background: #00e676;
   box-shadow:
     0 0 10px rgba(0, 230, 118, 0.9),
     0 0 20px rgba(0, 230, 118, 0.7),
@@ -148,7 +148,7 @@ body {
   pointer-events: none;
 }
 
-/* ===== HEADER ===== */
+/*  HEADER  */
 #header {
   height: 60px;
   background: linear-gradient(90deg, #0d47a1, #1565c0);
@@ -170,7 +170,7 @@ body {
   opacity: 0.85;
 }
 
-/* ===== FOOTER ===== */
+/*  FOOTER  */
 #footer {
   height: 40px;
   background: #111;
